@@ -1,0 +1,46 @@
+{
+  "endpoints": {
+    "zh":{
+      "lang": "zh",
+      "url": "http://www.scp-wiki-cn.org",
+      "database": [
+        {
+          "id": "1",
+          "label": "Series-I",
+          "url": "/scp-seriess"
+        },
+        {
+          "id": "2",
+          "label": "Series-II",
+          "url": "/scp-series-2"
+        },
+        {
+          "id": "3",
+          "label": "Series-III",
+          "url": "/scp-series-3"
+        }
+      ]
+    },
+    "en":{
+      "lang": "en",
+      "url": "http://www.scp-wiki.org",
+      "database": [
+        {
+          "id": "1",
+          "label": "Series-I",
+          "url": "/scp-series"
+        },
+        {
+          "id": "2",
+          "label": "Series-II",
+          "url": "/scp-series-2"
+        },
+        {
+          "id": "3",
+          "label": "Series-III",
+          "url": "/scp-series-3"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "me.zhennan.scp.android"
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.1.0'
+
+    // jsoup
+    compile 'org.jsoup:jsoup:1.8.2'
+
+    // utilities
+    compile 'com.jakewharton:butterknife:6.1.0'
+
+
+    // network
+    compile 'com.squareup.okhttp:okhttp:2.3.0'
+
+    // debug
+    compile 'com.facebook.stetho:stetho:1.1.1'
+    compile 'com.facebook.stetho:stetho-okhttp:1.1.1'
+
+    // for design pattern
+    compile project(':libraries:design_pattern')
+
+    // ui
+    compile project(':libraries:multitypelistadapter')
+
+    // usecases
+    compile project(':modules:usecase')
+}

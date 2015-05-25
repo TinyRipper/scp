@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.zhennan.scp.android" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".APP"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name=".view.splash.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.home.HomeActivity"  />
+        <activity android:name=".view.scp_database.DatabaseActivity" android:label="@string/database_name" android:screenOrientation="portrait" />
+        <activity android:name=".view.scp_entry.EntryActivity" android:screenOrientation="portrait" />
+
+        <service android:name=".service.CoreService" />
+
+
+        <!-- for common channel. it use default end point "EN" -->
+        <meta-data android:name="DefaultEndPoint" android:value="en" />
+
+        <!-- for channel in china, it use default end point "zh"  -->
+        <!--<meta-data android:value="DefaultEndPoint" android:name="zh" />-->
+    </application>
+
+</manifest>

@@ -1,0 +1,3 @@
+include ':app'
+include ':modules:model', ':modules:usecase'
+include ':libraries:design_pattern', ':libraries:multitypelistadapter'

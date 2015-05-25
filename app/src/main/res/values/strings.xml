@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SCP</string>
+
+    <string name="database_name">SCP - Database</string>
+
+    <string name="e_service_connection">Service Connection Error.</string>
+
+</resources>
